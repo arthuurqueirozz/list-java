@@ -51,13 +51,18 @@ public class Student implements Comparable<Student>{
 
     @Override
     public String toString() {
-        return "Student{" +
-                "name='" + name + '\'' +
-                ", course='" + course + '\'' +
-                ", grade=" + grade +
-                ", room='" + room + '\'' +
-                '}';
+        return "Student: " + name ;
     }
+
+//    @Override
+//    public String toString() {
+//        return "Student{" +
+//                "name='" + name + '\'' +
+//                ", course='" + course + '\'' +
+//                ", grade=" + grade +
+//                ", room='" + room + '\'' +
+//                '}';
+//    }
 
     @Override
     public int compareTo(Student student) {

@@ -15,7 +15,15 @@ public class Main {
         Students.add(a);
         Student b = new Student("Loco Abreu",  "windows", 8.2);
         Students.add(b);
+        Student c = new Student("Kalashnikov",  "math", 9.2);
+        Students.add(c);
         Collections.sort(Students);
+        System.out.println("LIST SORTED BY NAME: ");
+        System.out.println(Students);
+
+        CompareGrade compareGrade = new CompareGrade();
+        Collections.sort(Students, compareGrade);
+        System.out.println("LIST SORTED BY GRADE: ");
         System.out.println(Students);
     }
 
