@@ -17,16 +17,6 @@ public class Student implements Comparable<Student>{
         this.room = room;
     }
 
-    @Override
-    public String toString() {
-        return "Student{" +
-                "name='" + name + '\'' +
-                ", course='" + course + '\'' +
-                ", grade=" + grade +
-                ", room='" + room + '\'' +
-                '}';
-    }
-
     public String getCourse() {
         return course;
     }
@@ -57,5 +47,20 @@ public class Student implements Comparable<Student>{
 
     public void setRoom(String room) {
         this.room = room;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", course='" + course + '\'' +
+                ", grade=" + grade +
+                ", room='" + room + '\'' +
+                '}';
+    }
+
+    @Override
+    public int compareTo(Student student) {
+        return this.name.compareTo(student.getName());
     }
 }
