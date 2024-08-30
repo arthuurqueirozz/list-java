@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Student implements Comparable<Student>{
 
     private String name;
@@ -51,7 +53,7 @@ public class Student implements Comparable<Student>{
 
     @Override
     public String toString() {
-        return "Student: " + name ;
+        return "Student: " + name +  " - grade: " + grade;
     }
 
 //    @Override
@@ -67,5 +69,18 @@ public class Student implements Comparable<Student>{
     @Override
     public int compareTo(Student student) {
         return this.name.compareTo(student.getName());
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Student student = (Student) o;
+        return Objects.equals(name, student.name) && Objects.equals(course, student.course) && Objects.equals(grade, student.grade) && Objects.equals(room, student.room);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, course, grade, room);
     }
 }
