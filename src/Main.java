@@ -1,19 +1,18 @@
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
 public class Main {
 
     public static void main(String args[]){
-        //List<String> list = listExample();
-        //sortList(list);
+        List<String> list = listExample();
+        sortList(list);
 
         List<Student> Students = new ArrayList<Student>();
 
         Student a = new Student("Vladimir Putin",  "linux", 8.0);
         Students.add(a);
-        Student b = new Student("Loco Abreu",  "windows", 8.2);
+        Student b = new Student("Loco Abreu",  "windows", 9.6);
         Students.add(b);
         Student c = new Student("Kalashnikov",  "math", 9.2);
         Students.add(c);
