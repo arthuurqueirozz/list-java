@@ -29,7 +29,7 @@ public class Main {
     public static List<String> listExample() {
         List<String> list = new ArrayList<String>();
 
-        list.add("Joãozin");
+        list.add("João");
         list.add("Pelé");
         list.add("Vladimir putin");
         list.add("eu");
